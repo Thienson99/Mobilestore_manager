@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="product-detail-top">
+        <div class="product-detail-header">
+            <p class="product-detail-title">Products</p>
+        </div>
+    </div>
+    <div class="product-detail-grid-container">
+        <div class="product-detail-grid-item">
+            <img src="image/iphone-x.jpg">
+        </div>
+        <div class="product-detail-grid-item1">
+		<input id="idProduct" value="3" type="hidden"/>
+            <h6 id="productName">Iphone X </h6>
+            <p id="description">A smartphone is a handheld personal computer with a mobile operating system and an integrated mobile
+                broadband
+                cellular network connection for voice, SMS, and Internet data communication: most, if not all,
+                smartphones also support Wi- Fi</p>
+            <div>
+                <p><b>Item Code : <button class="product-detail-item-code"><b>1526440382825</b></button></b></p>
+                <p><b>manufacturer :</b>Apple</p>
+                <p><b>category:</b><a href="">apple</a></p>
+                <p><b>Availble units in stock :</b>800</p>
+                <p id="price" style="font-size: 22px;margin-top: -5px;">1099USD</p>
+            </div>
+            <div>
+                <button class="product-detail-detail-btn"><i class="fa fa-arrow-circle-o-left" style="
+                           height: 20px;font-size: 20px;"><a href="3. products-list.html"> Back </a></i></button>
+                <button onclick="order()" class="product-detail-order-btn"><i class="fa fa-shopping-cart" style="
+                           height: 20px; font-size: 20px;"> Order Now </i></button>
+            </div>
+        </div>
+		<script src="js/product-detail.js"></script>
+</body>
+
+</html>

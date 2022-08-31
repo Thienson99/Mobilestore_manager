@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="product-add-top">
+        <div class="product-add-header">
+            <div class="product-add-submit">
+			 <button class="btn btn-danger" onclick="logout()">Logout</button>
+			</div>
+            <p class="product-add-title">Products</p>
+            <p class="product-add-title2">Add products</p>
+        </div><br>
+    </div>
+    <div class="product-add-top-title3">
+        <p class="product-add-title3">Add new product</p>
+        <hr>
+    </div>
+    <div class="product-add-table">
+        <table>
+            <tr>
+                <td class="column-left">Product Name</td>
+                <td><input type="text" id="productName"></td>
+            </tr>
+            <tr>
+                <td class="column-left">Unit Price</td>
+                <td><input type="number" id="price"></td>
+            </tr>
+            <tr>
+                <td class="column-left"> Units In Stock </td>
+                <td><input type="number" id="stock"></td>
+            </tr>
+            <tr>
+                <td class="column-left">Description</td>
+                <td><textarea placeholder="Content" id="description"></textarea></td>
+            </tr>
+            <tr>
+                <td class="column-left">Manufacturer</td>
+                <td><input type="text" id="manufacturer"></td>
+            </tr>
+            <tr>
+                <td class="column-left">Category</td>
+                <td><input type="text" id="category"></td>
+            </tr>
+            <tr>
+                <td class="column-left">Condition </td>
+                <td>
+                    
+					<input class="checkbox" name="check" value="new" type="checkbox" onclick="checkCondition(this.value)"> New
+                <input class="checkbox" name="check" value="old" type="checkbox" onclick="checkCondition(this.value)"> Old
+                <input class="checkbox" name="check" value="refubished" type="checkbox" onclick="checkCondition(this.value)"> Refubished
+                </td>
+            </tr>
+            <tr>
+                <td class="column-left">Product Image File</td>
+                <td><input id="file" type="file" value="Product Image File">
+                </td>
+        </table>
+        <button class="btn btn-primary" onclick="addProduct()">Add product</button>
+    </div>
+	 <script src="js/product-add.js"></script>
+</body>
+
+</html>
